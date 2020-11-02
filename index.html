@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rank and Greetings</title>
+
+</head>
+<body>
+<h1>Enter your Rank and Name</h1>
+<form>
+    <div>
+        <fieldset>
+            <legend>Choose your Rank</legend>
+        <input type="radio" name="rank" id="rank-pleb" data-rank="Plebeian"
+               checked="checked">
+        <label for="rank-pleb">Plebeian</label>
+
+        <br>
+
+        <input type="radio" name="rank" id="rank-pat" data-rank="Patrician">
+        <label for="rank-pleb">Patrician</label>
+
+        <br>
+
+        <input type="radio" name="rank" id="rank-glad" data-rank="Gladiator">
+        <label for="rank-pleb">Gladiator</label>
+
+        <br>
+
+        <input type="radio" name="rank" id="rank-slave" data-rank="Slave">
+        <label for="rank-slave">Slave</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Enter Your Name</legend>
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName">
+
+        <br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="lastName">
+
+        </fieldset>
+        <br>
+        <button>Submit for Greeting</button>
+
+    </div>
+    <div class="hello">
+        <p><span id="greeting"></span></p>
+    </div>
+</form>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="ranks.js"></script>
+</body>
+</html>
